@@ -1,0 +1,10 @@
+# Import the default constants of EXT:fluid_styled_content
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript'
+
+page {
+  fluidtemplate {
+    layoutRootPath = EXT:addwebpackage/Resources/Private/Layouts/Page/
+    partialRootPath = EXT:addwebpackage/Resources/Private/Partials/Page/
+    templateRootPath = EXT:addwebpackage/Resources/Private/Templates/Page/
+  }
+}
