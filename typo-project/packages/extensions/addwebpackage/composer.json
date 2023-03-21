@@ -1,0 +1,31 @@
+{
+    "name" : "addweb/addwebpackage",
+    "type" : "typo3-cms-extension",
+    "description" : "Addweb Theme development",
+    "authors": [
+                 {
+                         "name": "Addweb Team",
+                         "role": "Developer",
+                         "homepage": "https://localhost"
+                    }
+                   
+            ],
+
+    "require" : {
+        "typo3/cms-core" : "^11.5",
+        "typo3/cms-rte-ckeditor" : "^11.5",
+        "typo3/cms-fluid-styled-content" : "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Addwebsolution\\Sitepackage\\": "Classes/"
+        }
+    },
+
+    "extra" :{
+        "typo3/cms" :{
+            "extension-key" : "addwebpackage"
+        }
+
+    }
+}
