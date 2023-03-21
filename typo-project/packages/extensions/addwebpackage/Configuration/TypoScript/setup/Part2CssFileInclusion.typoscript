@@ -1,0 +1,21 @@
+ page {
+   // Part 2: CSS file inclusion
+   includeCSS {
+     bootstrap = https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css
+     bootstrap.external = 1
+      bootstrapJumborton = https://getbootstrap.com/docs/4.0/examples/jumbotron/jumbotron.css
+      bootstrapJumborton.external = 1
+    website = EXT:addwebpackage/Resources/Public/Css/website.css
+  }
+
+  // Part 3: JavaScript file inclusion
+   includeJSFooter {
+    jquery = https://code.jquery.com/jquery-3.2.1.slim.min.js
+    jquery.external = 1
+    popper = https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js
+    popper.external = 1
+    bootstrap = https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js
+    bootstrap.external = 1
+    website = EXT:addwebpackage/Resources/Public/JavaScript/website.js
+  }
+}
