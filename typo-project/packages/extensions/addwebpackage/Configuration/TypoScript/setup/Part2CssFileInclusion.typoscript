@@ -1,21 +1,21 @@
- 1page {
- 2  // Part 2: CSS file inclusion
- 3  includeCSS {
- 4    bootstrap = https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css
- 5    bootstrap.external = 1
+ page {
+   // Part 2: CSS file inclusion
+   includeCSS {
+     bootstrap = https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css
+     bootstrap.external = 1
       bootstrapJumborton = https://getbootstrap.com/docs/4.0/examples/jumbotron/jumbotron.css
       bootstrapJumborton.external = 1
- 6    website = EXT:addwebpackage/Resources/Public/Css/website.css
- 7  }
- 8
- 9  // Part 3: JavaScript file inclusion
-10  includeJSFooter {
-11    jquery = https://code.jquery.com/jquery-3.2.1.slim.min.js
-12    jquery.external = 1
-13    popper = https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js
-14    popper.external = 1
-15    bootstrap = https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js
-16    bootstrap.external = 1
-17    website = EXT:addwebpackage/Resources/Public/JavaScript/website.js
-18  }
-19}
+    website = EXT:addwebpackage/Resources/Public/Css/website.css
+  }
+
+  // Part 3: JavaScript file inclusion
+   includeJSFooter {
+    jquery = https://code.jquery.com/jquery-3.2.1.slim.min.js
+    jquery.external = 1
+    popper = https://getbootstrap.com/docs/4.0/assets/js/vendor/popper.min.js
+    popper.external = 1
+    bootstrap = https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js
+    bootstrap.external = 1
+    website = EXT:addwebpackage/Resources/Public/JavaScript/website.js
+  }
+}
