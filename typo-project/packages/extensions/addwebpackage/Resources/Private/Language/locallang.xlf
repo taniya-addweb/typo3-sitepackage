@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2023-01-16UTC13:43:490">
+        <header>
+            <authorName>Addweb</authorName>
+            <authorEmail>taniya@addwebsolution.in</authorEmail>
+        </header>
+        <body>
+         <trans-unit id="banner_newcontentelement_title">
+        <source> Banner with TCA</source>
+      </trans-unit>
+        <trans-unit id="banner_newcontentelement_description">
+        <source> Banner Description with TCA</source>
+      </trans-unit>
+   
+      
+        </body>
+    </file>
+</xliff>
