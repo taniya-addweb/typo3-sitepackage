@@ -1,0 +1,73 @@
+ // Part 1: Fluid template section
+ page.10 = FLUIDTEMPLATE
+ page.10 {
+   templateName = TEXT
+   templateName {
+     cObject = TEXT
+     cObject {
+       data = pagelayout
+       required = 1
+      case = ucfirst
+      split {
+        token = pagets__
+        cObjNum = 1
+        1.current = 1
+      }
+    }
+
+    ifEmpty = Default
+  }
+
+  variables {
+    pagelayout = Default
+  }
+  templateRootPaths {
+    0 = EXT:addwebpackage/Resources/Private/Templates/Page/
+    1 = {$page.fluidtemplate.templateRootPath}
+  }
+
+  partialRootPaths {
+    0 = EXT:addwebpackage/Resources/Private/Partials/Page/
+    1 = {$page.fluidtemplate.partialRootPath}
+  }
+
+  layoutRootPaths {
+    0 = EXT:addwebpackage/Resources/Private/Layouts/Page/
+    1 = {$page.fluidtemplate.layoutRootPath}
+  }
+  dataProcessing {
+      10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      10 {
+         levels = 1
+         includeSpacer = 1
+         as = mainnavigation
+      }
+   }
+}
+#page.10.file = EXT:addwebpackage/Resources/Private/Layouts/Page/Default.html
+# page.10 = TEXT
+#     page.10.value = My variable  {$page.fluidtemplate.templateRootPath}
+
+# lib.contentElement {
+#     templateRootPaths.200 = EXT:addwebpackage/Resources/Private/Templates/Page
+# }
+tt_content {
+    banner_newcontentelement =< lib.contentElement
+    banner_newcontentelement {
+        templateName = BannerWithTCA
+
+        # Define the path to the custom Fluid template file
+        templateRootPaths.200 = EXT:addwebpackage/Resources/Private/Templates/Page
+
+        dataProcessing {
+        20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        20 {
+            references {
+                fieldName = image
+            }
+            as = images
+        }
+      
+    }
+    }
+}

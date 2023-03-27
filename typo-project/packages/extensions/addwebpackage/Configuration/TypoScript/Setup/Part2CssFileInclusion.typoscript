@@ -1,11 +1,13 @@
  page {
    // Part 2: CSS file inclusion
    includeCSS {
+     
      bootstrap = https://getbootstrap.com/docs/4.0/dist/css/bootstrap.min.css
      bootstrap.external = 1
       bootstrapJumborton = https://getbootstrap.com/docs/4.0/examples/jumbotron/jumbotron.css
       bootstrapJumborton.external = 1
-    website = EXT:addwebpackage/Resources/Public/Css/website.css
+   # website = EXT:addwebpackage/Resources/Public/Css/website.css
+      # mycss = EXT:addwebpackage/Resources/Public/asset/*.css
   }
 
   // Part 3: JavaScript file inclusion
@@ -16,6 +18,6 @@
     popper.external = 1
     bootstrap = https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js
     bootstrap.external = 1
-    website = EXT:addwebpackage/Resources/Public/JavaScript/website.js
+    #website = EXT:addwebpackage/Resources/Public/JavaScript/website.js
   }
 }

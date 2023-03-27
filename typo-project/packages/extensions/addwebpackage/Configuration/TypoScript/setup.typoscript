@@ -1,2 +1,14 @@
+
+
 @import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
 @import 'EXT:addwebpackage/Configuration/TypoScript/Setup/*.typoscript'
+
+# {page.fluidtemplate}
+
+# page = PAGE
+# page.1 = TEXT
+# page.1.value = Hello, world.
+
+# page = PAGE
+# page.10 = FLUIDTEMPLATE
+# page.10.file = EXT:addwebpackage/Resources/Private/Layouts/Page/Default.html

@@ -2,11 +2,12 @@
     "name" : "addweb/addwebpackage",
     "type" : "typo3-cms-extension",
     "description" : "Addweb Theme development",
+    "version": "1.0",
     "authors": [
                  {
-                         "name": "Addweb Team",
-                         "role": "Developer",
-                         "homepage": "https://localhost"
+                     "name": "Addweb Team",
+                     "role": "Developer",
+                     "homepage": "https://localhost"
                     }
                    
             ],
@@ -18,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Addwebsolution\\Sitepackage\\": "Classes/"
+            "Addwebsolution\\AddwebPackage\\": "Classes/"
         }
     },
 
